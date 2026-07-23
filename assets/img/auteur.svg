@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Illustratie van KyraBosman">
+<title>Kyra Bosman</title>
+<circle cx="120" cy="120" r="120" fill="#F2EAE0"/>
+<circle cx="120" cy="130" r="82" fill="#EFC0A0"/>
+<path d="M38 140c0-52 36-84 82-84s82 32 82 84c-6-30-22-44-38-40-4-18-24-24-44-24s-40 6-44 24c-16-4-32 10-38 40z" fill="#2E1F19"/>
+<path d="M40 138c-10 30-6 52 4 66-4-28-2-48 4-58z" fill="#2E1F19"/>
+<path d="M200 138c10 30 6 52-4 66 4-28 2-48-4-58z" fill="#2E1F19"/>
+<g fill="#291E18"><ellipse cx="96" cy="142" rx="6" ry="7.4"/><ellipse cx="144" cy="142" rx="6" ry="7.4"/></g>
+<g stroke="#6B4632" stroke-width="4" fill="none" stroke-linecap="round"><path d="M84 125q12-8 24-1"/><path d="M132 124q12-8 24 1"/></g>
+<path d="M102 170q18 13 36 0" fill="none" stroke="#A9503E" stroke-width="5" stroke-linecap="round"/>
+<circle cx="78" cy="158" r="9" fill="#DB7C63" opacity=".42"/><circle cx="162" cy="158" r="9" fill="#DB7C63" opacity=".42"/>
+<path d="M46 216q74-42 148 0v24H46z" fill="#1F4A47"/>
+<path d="M96 210q24 14 48 0l6 30H90z" fill="#F7F2EA"/>
+<circle cx="120" cy="228" r="5" fill="#B5654A"/>
+<circle cx="188" cy="62" r="12" fill="#B5654A" opacity=".45"/>
+</svg>

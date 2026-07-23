@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 360" role="img" aria-label="Illustratie van een woonkamerhoek">
+<title>Woonkamerhoek</title>
+<rect width="500" height="360" rx="18" fill="#F2EAE0"/>
+<circle cx="404" cy="86" r="46" fill="#E4C79B" opacity=".5"/>
+<rect x="60" y="286" width="380" height="10" rx="5" fill="#D8C4AB"/>
+<g>
+  <rect x="98" y="176" width="188" height="86" rx="16" fill="#B5654A"/>
+  <rect x="110" y="160" width="70" height="34" rx="12" fill="#C97B5E"/>
+  <rect x="188" y="160" width="70" height="34" rx="12" fill="#C97B5E"/>
+  <rect x="92" y="182" width="20" height="60" rx="9" fill="#A0563E"/>
+  <rect x="272" y="182" width="20" height="60" rx="9" fill="#A0563E"/>
+  <rect x="120" y="262" width="10" height="22" rx="4" fill="#7A5230"/>
+  <rect x="254" y="262" width="10" height="22" rx="4" fill="#7A5230"/>
+  <rect x="122" y="166" width="42" height="26" rx="9" fill="#E4C79B"/>
+</g>
+<g>
+  <rect x="318" y="222" width="104" height="12" rx="6" fill="#8B5E3C"/>
+  <rect x="330" y="234" width="9" height="50" rx="4" fill="#A0714A"/>
+  <rect x="402" y="234" width="9" height="50" rx="4" fill="#A0714A"/>
+  <ellipse cx="370" cy="212" rx="26" ry="9" fill="#1F4A47"/>
+  <path d="M354 212q16-30 32 0z" fill="#2C6460"/>
+</g>
+<g>
+  <rect x="60" y="120" width="8" height="164" rx="4" fill="#8B5E3C"/>
+  <path d="M64 120c-22-8-30-30-22-52 22 8 30 30 22 52z" fill="#2C6460"/>
+  <path d="M64 132c22-10 30-32 22-54-22 10-30 32-22 54z" fill="#3C7A74"/>
+</g>
+<rect x="330" y="60" width="112" height="80" rx="8" fill="#FBF7F1" stroke="#C9B79D" stroke-width="4"/>
+<path d="M340 128l28-34 20 24 14-16 30 26z" fill="#E4C79B"/>
+<circle cx="356" cy="82" r="7" fill="#C97B5E"/>
+</svg>
