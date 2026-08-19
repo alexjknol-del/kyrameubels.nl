@@ -245,7 +245,12 @@ def p_gidsen():
     h=head("Gidsen | onderhoud en inrichten | "+SITE,"Praktische gidsen over het onderhouden van meubels per materiaal en over het inrichten van een kleine ruimte.",path,ld)+crumbs_html(c)
     h+=f"""<section class="section"><div class="wrap"><div class="section-head"><span class="eyebrow">{IC['book']}Gidsen</span><h1>Gidsen</h1>
   <p class="lead">Twee onderwerpen die bij vrijwel elk interieur spelen: onderhoud en indeling.</p></div>
-  <div class="grid cols-2">{cards}</div></div></section>"""
+  <div class="grid cols-2">{cards}</div></div></section>
+<section class="section panel"><div class="wrap"><div class="section-head"><span class="eyebrow">{IC['book']}Extra</span><h2>Ook interessant</h2></div>
+<div class="grid cols-2">
+<div class="card"><h3><a href="https://www.stofzakkie.nl/" target="_blank" rel="noopener">Stofzakkie webshop</a></h3><p>Webshop voor stofzuigerzakken en stofzuigerbenodigdheden, praktisch bij het schoonhouden van stoffen meubels.</p></div>
+<div class="card"><h3><a href="https://www.cf-kunststofprofielen.nl/profielen/hoekprofielen" target="_blank" rel="noopener">Hoekprofiel</a></h3><p>Kunststof hoekprofielen voor het afwerken en beschermen van hoeken en randen.</p></div>
+</div></div></section>"""
     write(path,h+footer())
 
 def p_gids(g):
