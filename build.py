@@ -80,6 +80,7 @@ def blocks(bs):
         elif b[0]=="h2": o.append(f"<h2>{esc(b[1])}</h2>")
         elif b[0]=="ul": o.append("<ul>"+"".join(f"<li>{esc(x)}</li>" for x in b[1])+"</ul>")
         elif b[0]=="callout": o.append(f'<div class="callout"><p>{esc(b[1])}</p></div>')
+        elif b[0]=="plink": o.append(f"<p>{b[1]}</p>")
     return "".join(o)
 def byline():
     return f'<div class="byline"><img src="/assets/img/auteur.svg" alt="{esc(AUTEUR)}"><div class="who">{esc(AUTEUR)}<small>{esc(AUTEUR_ROL)}</small></div></div>'
@@ -151,6 +152,26 @@ GIDSEN=[
 ]
 
 ARTIKELEN=[
+ {"slug":'eetkamerstoelen-slijtage-punten','titel':'Eetkamerstoelen: de punten die pas na een jaar opvallen',"cat":'Praktijk',"datum":'2026-08-19',"datum_nl":'19 augustus 2026','lees':5,
+  'resume':'Comfort in de winkel zegt weinig over hoe een stoel zich houdt bij dagelijks gebruik.',
+  "body":[
+  ('p', 'Een eetkamerstoel wordt gekozen op uiterlijk en op vijf minuten zitten in een toonzaal. De punten die na een jaar bepalen of de keuze goed was, komen in die vijf minuten niet aan bod.'),
+  ('h2', 'Waar slijtage begint'),
+  ('p', 'De eerste plek is de voorrand van de zitting. Daar rust het gewicht bij het aanschuiven en daar schuurt de stof over het schuim. Bij een strak overtrokken zitting zonder extra versteviging is dat de plek waar de stof het eerst dun wordt.'),
+  ('p', 'De tweede plek is de verbinding tussen poot en zitting. Een stoel wordt dagelijks een stukje verschoven, en die zijdelingse kracht komt volledig op die verbinding. Een houten frame met deuvels en lijm blijft steviger dan een verbinding die alleen op schroeven rust.'),
+  ('h2', 'Stof en onderhoud'),
+  ('ul', ['Geweven stof met een hoge schuurwaarde gaat langer mee dan een zachte velours.', 'Een afneembare hoes klinkt praktisch en zit na wassen zelden weer strak.', 'Bij een lichte kleur telt vlekbestendigheid zwaarder dan de kleurkeuze zelf.', 'Leer en kunstleer scheuren bij droge lucht, dus niet vlak bij een radiator zetten.']),
+  ('plink', 'Voor een tafel waar dagelijks gegeten wordt, weegt schuurbestendigheid zwaarder dan zachtheid. Uitvoeringen die daarop zijn gebouwd staan bij <a href="https://vansoestliving.nl/collections/robuuste-eetkamerstoelen" rel="nofollow">Van Soest Living</a>.'),
+  ('h2', 'Verhouding tot de tafel'),
+  ('p', 'De maat die het vaakst wordt vergeten is de ruimte tussen zitting en tafelblad. Vijfentwintig tot dertig centimeter zit prettig; minder geeft klem zittende bovenbenen en bij stoelen met armleuning het probleem dat ze niet onder het blad passen.'),
+  ('plink', 'Meet daarom niet alleen de tafelhoogte maar ook de dikte van het blad en de positie van een eventuele schort onder het blad. Bij een tafel tegen de wand of in een smalle ruimte scheelt een draaibare uitvoering bovendien de ruimte die anders nodig is om aan te schuiven; die modellen staan op <a href="https://vansoestliving.nl/collections/draaibare-eetkamerstoelen" rel="nofollow">vansoestliving.nl</a>.'),
+  ('h2', 'Vloerbescherming'),
+  ('p', 'Viltjes onder de poten zijn geen detail. Zonder viltjes komen er binnen een jaar krassen in een houten of gietvloer, en die zijn zichtbaarder dan de stoel zelf.'),
+  ('p', 'Vervang ze bovendien voordat ze doorgesleten zijn. Een viltje dat op de spijker is versleten, kerft dieper dan helemaal geen viltje, omdat het gewicht dan op één punt komt.'),
+  ('h2', 'Aantal en variatie'),
+  ('p', 'Zes identieke stoelen rond een tafel is de gebruikelijke keuze en niet altijd de beste. Twee stoelen met armleuning aan de koppen en vier zonder geeft de tafel een duidelijke richting en biedt bovendien meer zitcomfort op de plekken waar het langst wordt gezeten.'),
+  ('p', 'Houd bij een dergelijke combinatie wel dezelfde stof en pootkleur aan. Verschil in model werkt; verschil in materiaal maakt het geheel onrustig en dat effect wordt sterker naarmate de ruimte kleiner is.'),
+ ]},
  {"slug":"waarom-massief-hout-werkt","titel":"Waarom massief hout blijft werken, ook na jaren","cat":"Materiaal","datum":"2026-07-14","datum_nl":"14 juli 2026","lees":4,
   "resume":"Een scheur in een tafelblad is zelden een fabricagefout. Vaak is het de luchtvochtigheid in huis.",
   "body":[("p","Massief hout blijft vocht opnemen en afgeven aan de lucht, ook decennia nadat de boom gekapt is. Dat is geen gebrek maar een eigenschap, en verklaart het grootste deel van de klachten over massieve tafels."),
