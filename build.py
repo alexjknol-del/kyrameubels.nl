@@ -271,6 +271,7 @@ def p_gidsen():
 <div class="grid cols-2">
 <div class="card"><h3><a href="https://www.stofzakkie.nl/" target="_blank" rel="noopener">Stofzakkie webshop</a></h3><p>Webshop voor stofzuigerzakken en stofzuigerbenodigdheden, praktisch bij het schoonhouden van stoffen meubels.</p></div>
 <div class="card"><h3><a href="https://www.cf-kunststofprofielen.nl/profielen/hoekprofielen" target="_blank" rel="noopener">Hoekprofiel</a></h3><p>Kunststof hoekprofielen voor het afwerken en beschermen van hoeken en randen.</p></div>
+<div class="card"><h3><a href="https://www.woon-boerderijmaja.nl/houten-vloeren/wit/" target="_blank" rel="noopener">Witte houten vloer kopen</a></h3><p>Woon Boerderij Maja biedt witte houten vloeren, een lichte en tijdloze keuze voor wie een fris interieur wil.</p></div>
 </div></div></section>"""
     write(path,h+footer())
 
