@@ -20,7 +20,7 @@ IC={
  "book":'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5H4z"/><path d="M20 4h-3a3 3 0 0 0-3 3v13a2.5 2.5 0 0 1 2.5-2.5H20z"/></svg>',
  "menu":'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>',
 }
-NAV=[("Home","/"),("Materialen","/materialen/"),("Gidsen","/gidsen/"),("Nieuws","/nieuws/"),("Over","/over/"),("Contact","/contact/")]
+NAV=[("Home","/"),("Materialen","/materialen/"),("Gidsen","/gidsen/"),("Nieuws","/nieuws/"),("Over","/over/"),("Partners","/partners/"),("Contact","/contact/")]
 
 def head(title,desc,path,ld=None):
     can=BASE+path
@@ -345,6 +345,17 @@ def p_redactie():
   <p>Vragen, correcties en suggesties komen binnen via <a href="mailto:{EMAIL}">{EMAIL}</a>.</p></div></section>"""
     write(path,h+footer())
 
+def p_partners():
+    path="/partners/"; c=[("Home","/"),("Partners",path)]
+    ld=[crumb(c),{"@context":"https://schema.org","@type":"CollectionPage","@id":BASE+path,"url":BASE+path,"name":"Partners","inLanguage":"nl-NL"}]
+    h=head("Partners | "+SITE,"Externe partners en bronnen waar Kyra Meubels naar verwijst.",path,ld)+crumbs_html(c)
+    h+=f"""<section class="section"><div class="wrap"><div class="section-head"><span class="eyebrow">{IC['book']}Partners</span>
+  <h1>Partners</h1><p class="lead">Kyra Meubels verwijst hier naar externe partners en bronnen.</p></div>
+  <div class="grid cols-2">
+<div class="card"><h3><a href="https://www.woon-boerderijmaja.nl/houten-vloeren/wit/" target="_blank" rel="noopener">Witte houten vloer kopen</a></h3><p>Woon Boerderij Maja biedt witte houten vloeren, een lichte en tijdloze keuze voor wie een fris interieur wil.</p></div>
+</div></div></section>"""
+    write(path,h+footer())
+
 def p_contact():
     path="/contact/"; c=[("Home","/"),("Contact",path)]
     ld=[crumb(c),{"@context":"https://schema.org","@type":"ContactPage","@id":BASE+path,"url":BASE+path,"name":"Contact","inLanguage":"nl-NL"}]
@@ -388,7 +399,7 @@ def p_404():
     open(os.path.join(OUT,"404.html"),"w",encoding="utf-8").write(h+footer())
 
 def extras():
-    u=["/","/over/","/redactie/","/materialen/","/gidsen/","/nieuws/","/contact/","/privacybeleid/","/cookiebeleid/"]
+    u=["/","/over/","/redactie/","/materialen/","/gidsen/","/nieuws/","/partners/","/contact/","/privacybeleid/","/cookiebeleid/"]
     u+=[f"/materialen/{s['slug']}/" for s in MATERIALEN]+[f"/gidsen/{g['slug']}/" for g in GIDSEN]+[f"/nieuws/{a['slug']}/" for a in ARTIKELEN]
     open(os.path.join(OUT,"sitemap.xml"),"w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{x}</loc></url>\n" for x in u)+"</urlset>\n")
     open(os.path.join(OUT,"robots.txt"),"w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
@@ -406,7 +417,7 @@ def main():
     for g in GIDSEN: p_gids(g)
     p_nieuws()
     for a in ARTIKELEN: p_art(a)
-    p_contact(); p_legal(); p_404(); extras()
+    p_partners(); p_contact(); p_legal(); p_404(); extras()
     print("Build klaar in", OUT)
 
 if __name__=="__main__": main()
