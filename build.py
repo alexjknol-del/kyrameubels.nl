@@ -409,6 +409,9 @@ def p_partners():
 <div class="card"><h3><a href="https://www.huissteden.nl/machines/naaimachines" target="_blank" rel="noopener">Naaimachine</a></h3><p>Huissteden levert naaimachines, onderdelen en accessoires.</p></div>
 <div class="card"><h3><a href="https://jeroen.nl/energie/opslaan/thuisbatterij" target="_blank" rel="noopener">Thuisbatterij</a></h3><p>Jeroen.nl behandelt het opslaan van energie, waaronder thuisbatterijen.</p></div>
 <div class="card"><h3><a href="https://witgoedvergelijker.nl/" target="_blank" rel="noopener">Witgoed vergelijken</a></h3><p>Witgoedvergelijker.nl vergelijkt witgoed op kenmerken en totaalprijs bij aangesloten winkels.</p></div>
+<div class="card"><h3><a href="https://deruijtermeubel.nl/fauteuils/" target="_blank" rel="noopener">Fauteuil kopen</a></h3><p>De Ruijtermeubel is een meubelshowroom in Cruquius met banken, fauteuils en tafels.</p></div>
+<div class="card"><h3><a href="https://www.loodgieter-tilburg013.com" target="_blank" rel="noopener">Loodgieter in Tilburg</a></h3><p>Loodgieter voor lekkages, verstoppingen en spoedklussen in Tilburg en omgeving.</p></div>
+<div class="card"><h3><a href="https://slaapbanken.nl/" target="_blank" rel="noopener">Easy Living</a></h3><p>Easy Living is specialist in slaapbanken en opklapbedden, met een showroom in Amsterdam.</p></div>
 </div></div></section>"""
     write(path,h+footer())
 
