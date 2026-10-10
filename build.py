@@ -408,6 +408,7 @@ def p_partners():
 <div class="card"><h3><a href="https://dutchroofdesign.com/product/elektrisch-dakluik/" target="_blank" rel="noopener">dakluik dakterras</a></h3><p>Dutch Roof Design levert elektrische dakluiken voor toegang tot een dakterras.</p></div>
 <div class="card"><h3><a href="https://www.huissteden.nl/machines/naaimachines" target="_blank" rel="noopener">Naaimachine</a></h3><p>Huissteden levert naaimachines, onderdelen en accessoires.</p></div>
 <div class="card"><h3><a href="https://jeroen.nl/energie/opslaan/thuisbatterij" target="_blank" rel="noopener">Thuisbatterij</a></h3><p>Jeroen.nl behandelt het opslaan van energie, waaronder thuisbatterijen.</p></div>
+<div class="card"><h3><a href="https://witgoedvergelijker.nl/" target="_blank" rel="noopener">Witgoed vergelijken</a></h3><p>Witgoedvergelijker.nl vergelijkt witgoed op kenmerken en totaalprijs bij aangesloten winkels.</p></div>
 </div></div></section>"""
     write(path,h+footer())
 
